@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded',()=>{
         logoSpan.forEach((span,idx)=>{
             setTimeout(()=>{
                 span.classList.add('active');
-            }, (idx + 1 * 400))
+            }, (idx + 1) * 500)
         })
 
         setTimeout(()=>{
@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded',()=>{
                 setTimeout(()=>{
                     span.classList.remove('active');
                     span.classList.add('fade');
-                }, (idx + 1 * 50))
+                }, (idx + 1) * 50)
             })
         },2000)
 

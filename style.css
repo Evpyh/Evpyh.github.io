@@ -7,8 +7,6 @@ body {
 }
 
 
-  
-
 #image-track {
     display: flex;
     flex-direction: column;
@@ -64,7 +62,12 @@ body {
     transition-duration: 400ms;
 }
 
-
+.port-img{
+  width: 15vw;
+  height: 20vh;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
 
 #image-track-3 {
     display: flex;
@@ -132,6 +135,20 @@ body {
   transition-duration: 400ms;
 }
 
+#nav-toggle > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  color: rgb(246, 231, 224);
+  font-size: 1.75rem;
+  opacity: 1;
+  transition: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+  height: 95px;
+}
+
 #nav-bar{
     position: absolute;
     height: 100vh;
@@ -197,6 +214,11 @@ body:not([data-task1="true"]) > #nav-toggle:hover > .open {
     transform: translate(-50%, -50%) scale(1);
 }
 
+body:not([data-task1="true"]) > #nav-toggle:hover > .inactive {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
 body[data-task1="true"] > #nav-toggle > .close {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
@@ -225,6 +247,7 @@ body[data-task1="true"] > #nav-toggle > .close {
   display: inline-block;
   bottom: -20px;
   opacity: 0;
+  font-family: "Dancing Script",normal;
 }
 
 .image-logo{
@@ -254,6 +277,29 @@ body[data-task1="true"] > #nav-toggle > .close {
 .third{
     animation: bannermove-3 380s linear infinite;
 }
+
+.introduction{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction > span{
+  width: 45vw;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: grid;
+  justify-content: center;
+}
+
+.port-sec{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   
 @keyframes bannermove {
   0% {
