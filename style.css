@@ -310,7 +310,6 @@ body[data-task1="true"] > #nav-toggle > .close {
   position: relative;
   display: flex;
   justify-content: center;
-  
 }
 .title{
   position: relative;
