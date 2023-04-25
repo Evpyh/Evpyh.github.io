@@ -63,8 +63,11 @@ body {
 }
 
 .port-img{
-  width: 15vw;
-  height: 20vh;
+  width: 35vw;
+  height: 40vh;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
   margin-bottom: 10px;
   object-fit: cover;
 }
@@ -293,14 +296,67 @@ body[data-task1="true"] > #nav-toggle > .close {
   justify-content: center;
 }
 
+.introduction > span > h3,h6{
+  margin: 0;
+}
+
 .port-sec{
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
+.social{
+  position: relative;
+  display: flex;
+  justify-content: center;
   
+}
+.title{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#scroll-group{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transform: translate(0%, 0%); 
+  overflow: hidden;
+
+  left: 35%;
+}
+
+#scroll-group > a > .image {
+  width: 30vw;
+  height: 20vh;
+  
+  object-fit: cover;
+  object-position: 100% center;
+}
+  
+#scroll-column{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(0%, 0%); 
+  overflow: hidden;
+  left: 5%;
+}
+
+#scroll-column > a > .image {
+  width: 30vw;
+  height: 40vh;
+  
+  object-fit: cover;
+  object-position: 100% center;
+}
+  
+#img-group{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
 @keyframes bannermove {
   0% {
       margin-top: 0vh;
@@ -331,5 +387,3 @@ body[data-task1="true"] > #nav-toggle > .close {
   
 }
 
-  
-  
