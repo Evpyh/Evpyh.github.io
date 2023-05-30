@@ -1,10 +1,11 @@
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #edcccc;
+    background-color: #C7ABAB;
     margin: 0rem;
     overflow: hidden;
 }
+
 
 
 #image-track {
@@ -29,6 +30,15 @@ body {
     transition: transform;
     transition-timing-function: ease-in-out;
     transition-duration: 400ms;
+}
+
+
+#image-track > a > .i-caption,
+#image-track-2 > a > .i-caption,
+#image-track-3 > a > .i-caption{
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
  
 #image-track > a > .image:hover,
@@ -69,7 +79,7 @@ body {
   padding-right: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #image-track-3 {
@@ -117,6 +127,16 @@ body {
     transition-duration: 200ms;
 }
 
+#nav-menu{
+  position: absolute;
+    z-index: 3;
+    left: 89%;
+    bottom: 45%;
+    transition: transform, background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+}
+
 #nav-toggle:hover {
   transform: scale(1.2);
 }
@@ -153,7 +173,7 @@ body {
 }
 
 #nav-bar{
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 25vw;
     top: 0;
@@ -195,6 +215,12 @@ body {
     object-fit: cover;
   }
 
+  #image-p{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-image: url(images/coming.jpg);
+  }
+
 body[data-nav="true"] > #image-track,
 body[data-nav="true"] > #image-track-2,
 body[data-nav="true"] > #image-track-3 {
@@ -208,6 +234,11 @@ body[data-nav="true"] > #nav-toggle {
     transform: translate(-50%,45vh);
 }
 
+
+body[data-nav="true"] > #nav-menu {
+  opacity: 0;
+  transform: translate(-50%,45vh);
+}
 body[data-nav="true"] > #nav-bar{
     transform: translateX(-100%);
 }
@@ -306,8 +337,23 @@ body[data-task1="true"] > #nav-toggle > .close {
   justify-content: center;
 }
 
+.form{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.emails{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 .social{
   position: relative;
+  display: flex;
+  justify-content: center;
+}
+.c-header{
   display: flex;
   justify-content: center;
 }

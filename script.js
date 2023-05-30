@@ -28,3 +28,11 @@ window.addEventListener('DOMContentLoaded',()=>{
         },2300)
     })
 })
+
+document.addEventListener('DOMContentLoaded', 
+    function(){
+      Typed.new('.nav-menu', {
+        strings: ["menu"],
+        typeSpeed: 1.5
+      });
+  });
