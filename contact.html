@@ -10,6 +10,30 @@
                 <h3 class="c-header">
                     EMAILS
                 </h3>
+                <form id="form">
+                    <div class="field">
+                        <label for="to_name">to_name</label>
+                        <input type="text" name="to_name" id="to_name" required>
+                    </div>
+                    <div class="field">
+                        <label for="from_name">from_name</label>
+                        <input type="text" name="from_name" id="from_name" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">message</label>
+                        <textarea  name="message" rows="15" cols="35" required>
+                        
+                        </textarea>
+                    </div>
+
+                  
+                    <input type="submit" id="button" value="Send Email">
+                </form>
+            </span>
+            <span style="width: 20vw;">
+                <h3 class="c-header">
+                    EMAILS
+                </h3>
                 <div class="emails">
                     
                     <h5>
@@ -59,6 +83,11 @@
             </div>
         </nav>
         <script src="https://kit.fontawesome.com/67bb033e05.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+        emailjs.init('zvhFLhmhEBFmuON2F')
+        </script>
         <script src="script.js"></script>
     </body>
 </html>
