@@ -52,7 +52,6 @@ document.getElementById("form").addEventListener("submit", function (event) {
     () => {
       btn.value = "Send Email";
       alert("Sent!");
-      document.querySelector("#to_name").value = "";
       document.querySelector("#from_name").value = "";
       document.querySelector("#message").value = "";
     },

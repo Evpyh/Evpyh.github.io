@@ -4,6 +4,8 @@ body {
     background-color: #C7ABAB;
     margin: 0rem;
     overflow: hidden;
+    font-family:"Roboto Condensed", normal;
+    color: #7A4545;
 }
 
 
@@ -36,10 +38,11 @@ body {
 #image-track > a > .i-caption,
 #image-track-2 > a > .i-caption,
 #image-track-3 > a > .i-caption{
-  margin: 0;
+  margin-top: 2vh;
   display: flex;
   justify-content: center;
 }
+
  
 #image-track > a > .image:hover,
 #image-track-2 > a > .image:hover,
@@ -80,6 +83,10 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   object-fit: contain;
+}
+
+.p-title{
+  margin-left: 5vw;
 }
 
 .field {
